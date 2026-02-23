@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CK Canopy Design Gallery | Premium Event Themes</title>
+  <meta name="description" content="Explore CK Event Management canopy design previews, filter by color themes, and request instant mockups through WhatsApp." />
+  <style>
+    :root{
+      --bg:#0b0d12;
+      --surface:#141720;
+      --surface-elev:#1a1f2c;
+      --muted:#9fb0c6;
+      --line:#2a3142;
+      --text:#f8fafc;
+      --accent:#3b82f6;
+      --accent-2:#22c55e;
+      --gold:#eab308;
+      --danger:#ef4444;
+      --shadow:0 12px 40px rgba(0,0,0,.45);
+      --radius:16px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(circle at top, #121827 0%, #0b0d12 50%, #080a0f 100%);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 22px;
+      width: min(100%, 1240px);
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(11, 13, 18, 0.8);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    }
+
+    .topbar-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 14px 22px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-badge {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 15px;
+      color: #1a1000;
+      background: linear-gradient(135deg, #fde047, #ca8a04);
+      box-shadow: 0 0 18px rgba(202, 138, 4, 0.45);
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: .2px;
+    }
+
+    .brand p {
+      margin: 2px 0 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      flex: 1;
+      flex-wrap: wrap;
+    }
+
+    .input, .select {
+      background: #1b2131;
+      border: 1px solid var(--line);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 11px 14px;
+      font-size: 14px;
+      min-width: 220px;
+      outline: none;
+      transition: border-color .2s, box-shadow .2s;
+    }
+
+    .input:focus, .select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(59,130,246,.2);
+    }
+
+    .hero {
+      margin-top: 14px;
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(59,130,246,.16), rgba(234,179,8,.1));
+      border-radius: var(--radius);
+      padding: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .hero h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .hero p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .process-banner {
+      margin-top: 14px;
+      border: 1px solid #2d3a50;
+      border-radius: 16px;
+      background: linear-gradient(180deg, #0f182a, #111a2b);
+      padding: 14px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .process-title {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .process-item {
+      border: 1px solid #304056;
+      border-radius: 12px;
+      padding: 10px;
+      background: rgba(15, 23, 42, 0.7);
+      font-size: 13px;
+      line-height: 1.45;
+      color: #cbd5e1;
+    }
+
+    .process-item strong {
+      display: block;
+      color: #f8fafc;
+      margin-bottom: 3px;
+    }
+
+    .btn {
+      border: 1px solid var(--line);
+      background: var(--surface-elev);
+      color: var(--text);
+      border-radius: 10px;
+      padding: 10px 14px;
+      cursor: pointer;
+      transition: .2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .btn:hover { transform: translateY(-1px); border-color: #4b5563; }
+    .btn-primary { background: linear-gradient(135deg,#2f6dff,#4ea1ff); border-color: #376fea; }
+    .btn-wa { background: linear-gradient(135deg,#25D366,#128C7E); border-color:#128C7E; color:white; }
+    .btn-wa:hover { box-shadow:0 5px 20px rgba(37,211,102,.4); }
+
+    .palette-bg-light {
+      background: #fff;
+      padding: 10px 14px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      box-shadow: inset 0 2px 5px rgba(0,0,0,.08), 0 4px 14px rgba(0,0,0,.25);
+    }
+
+    .palette-bg-light .muted {
+      color: #334155;
+      font-weight: 700;
+      font-size: 13px;
+      margin-right: 2px;
+    }
+
+    .swatch-chip {
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      border:1px solid #cbd5e1;
+      border-radius:999px;
+      background:#f8fafc;
+      color:#0f172a;
+      font-size:12px;
+      font-weight:700;
+      padding:6px 10px;
+      cursor:pointer;
+      white-space:nowrap;
+      transition:.2s;
+    }
+
+    .swatch-chip:hover { border-color:var(--accent); box-shadow:0 2px 8px rgba(59,130,246,.25); }
+    .swatch-chip.active { border-color: var(--accent); box-shadow:0 0 0 2px rgba(59,130,246,.25); }
+
+    .swatch {
+      width:20px;
+      height:20px;
+      border-radius:50%;
+      border:2px solid rgba(0,0,0,.15);
+      box-shadow:0 2px 5px rgba(0,0,0,.2);
+      flex-shrink:0;
+    }
+
+    .custom-swatch-btn {
+      border:1px solid #cbd5e1;
+      border-radius:999px;
+      background:#f1f5f9;
+      color:#0f172a;
+      font-weight:700;
+      font-size:12px;
+      padding:8px 12px;
+      cursor:pointer;
+    }
+
+    .section { margin-top: 28px; }
+    .section-head { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:14px; }
+    .section-title { margin:0; font-size:20px; }
+    .muted { color: var(--muted); font-size: 14px; }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:16px;
+    }
+
+    .card {
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      display:flex;
+      flex-direction:column;
+      transition:.2s;
+    }
+
+    .card:hover { transform: translateY(-3px); border-color: rgba(255,255,255,.14); }
+
+    .thumb-wrap {
+      position:relative;
+      aspect-ratio:16/10;
+      overflow:hidden;
+      background:#000;
+      cursor:pointer;
+    }
+
+    .thumb {
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:transform .35s ease;
+    }
+
+    .card:hover .thumb { transform:scale(1.04); }
+
+    .badge-pop {
+      position:absolute;
+      top:10px;
+      left:10px;
+      background:rgba(15,23,42,.84);
+      border:1px solid rgba(255,255,255,.15);
+      color:#fde047;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:700;
+    }
+
+    .badge-theme {
+      position:absolute;
+      left:10px;
+      bottom:10px;
+      background:rgba(15,23,42,.84);
+      border:1px solid rgba(255,255,255,.15);
+      padding:6px 10px;
+      border-radius:999px;
+      display:flex;
+      gap:8px;
+      align-items:center;
+    }
+
+    .color-dot {
+      width:12px;
+      height:12px;
+      border-radius:50%;
+      border:2px solid rgba(255,255,255,.85);
+      box-shadow:0 0 6px rgba(0,0,0,.5);
+    }
+
+    .card-body { padding:14px; display:grid; gap:10px; }
+    .title { margin:0; font-size:15px; line-height:1.35; }
+    .card-actions { display:flex; gap:8px; flex-wrap:wrap; }
+    .card-actions .btn { flex:1; min-height:40px; font-size:12px; }
+
+    .empty {
+      border:1px dashed var(--line);
+      border-radius:16px;
+      padding:28px;
+      color:var(--muted);
+      text-align:center;
+      background:#141720;
+      grid-column:1/-1;
+    }
+
+    .load-wrap { margin-top: 24px; display: flex; justify-content: center; }
+
+    .modal {
+      position:fixed;
+      inset:0;
+      z-index:999;
+      display:none;
+      align-items:center;
+      justify-content:center;
+      padding:18px;
+      background:rgba(2,6,23,.9);
+      backdrop-filter: blur(8px);
+    }
+
+    .modal.open { display:flex; }
+
+    .modal-card {
+      width:min(1140px,100%);
+      max-height:92vh;
+      background:#0f141e;
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:20px;
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:minmax(0,1.2fr) 350px;
+      box-shadow:0 25px 80px rgba(0,0,0,.8);
+    }
+
+    .modal-media { background:#000; display:grid; place-items:center; position:relative; }
+    .modal-media img { width:100%; height:100%; object-fit:contain; max-height:92vh; }
+    .modal-side { border-left:1px solid var(--line); padding:22px; overflow:auto; display:flex; flex-direction:column; gap:16px; background:#141a27; }
+    .modal-title { margin:0; font-size:18px; line-height:1.4; }
+
+    .close-btn, .nav-btn {
+      border:1px solid rgba(255,255,255,.24);
+      background:rgba(0,0,0,.6);
+      color:#fff;
+      cursor:pointer;
+      transition:.2s;
+    }
+
+    .close-btn {
+      position:absolute;
+      top:12px;
+      right:12px;
+      width:40px;
+      height:40px;
+      border-radius:12px;
+      font-size:20px;
+      z-index:10;
+    }
+
+    .close-btn:hover { background: rgba(239,68,68,.82); }
+
+    .nav-btn {
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      width:46px;
+      height:46px;
+      border-radius:999px;
+      font-size:24px;
+      display:grid;
+      place-items:center;
+    }
+
+    .nav-btn.prev { left:12px; }
+    .nav-btn.next { right:12px; }
+
+    .tags { display:flex; flex-wrap:wrap; gap:8px; }
+    .tag {
+      font-size:12px;
+      border:1px solid rgba(255,255,255,.12);
+      color:#e2e8f0;
+      background:#1e293b;
+      border-radius:999px;
+      padding:6px 10px;
+      text-transform:capitalize;
+    }
+
+    .mini-modal {
+      width:min(480px,100%);
+      background:#141a27;
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:18px;
+      padding:24px;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      box-shadow:0 25px 80px rgba(0,0,0,.8);
+      position:relative;
+    }
+
+    .mini-modal .close-btn { top: 12px; right: 12px; border: none; background: transparent; color: var(--muted); }
+    .mini-modal .close-btn:hover { color: #fff; }
+
+    .form-group { display:flex; flex-direction:column; gap:8px; }
+    .form-group label { font-size:14px; font-weight:600; }
+
+    .color-picker-row { display:flex; gap:12px; align-items:center; }
+    .color-picker {
+      -webkit-appearance:none;
+      border:none;
+      width:44px;
+      height:44px;
+      border-radius:10px;
+      cursor:pointer;
+      padding:0;
+      background:transparent;
+      flex-shrink:0;
+    }
+
+    .color-picker::-webkit-color-swatch-wrapper { padding:0; }
+    .color-picker::-webkit-color-swatch { border-radius:10px; border:2px solid rgba(255,255,255,.4); }
+    .color-picker-row .input { flex:1; }
+
+
+
+    .quote-card {
+      margin-top: 30px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(20,23,32,.95), rgba(20,23,32,.8));
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 16px;
+    }
+
+    .quote-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 12px;
+    }
+
+    .quote-grid .full { grid-column: 1 / -1; }
+
+    .quote-note {
+      background: #0f172a;
+      border: 1px solid #243042;
+      border-radius: 12px;
+      padding: 12px;
+      color: #cbd5e1;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .quote-summary {
+      border: 1px dashed #334155;
+      border-radius: 12px;
+      padding: 12px;
+      background: #101826;
+      display: grid;
+      gap: 6px;
+      font-size: 14px;
+    }
+
+    .quote-steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 10px;
+    }
+
+    .step-card {
+      border: 1px solid #2e3a4f;
+      border-radius: 12px;
+      padding: 10px;
+      background: #111a2b;
+      font-size: 13px;
+      color: #cbd5e1;
+      line-height: 1.4;
+    }
+
+    .step-card strong {
+      display: block;
+      color: #f8fafc;
+      margin-bottom: 2px;
+    }
+
+    .selected-design {
+      border: 1px dashed #334155;
+      background: #0f172a;
+      border-radius: 12px;
+      padding: 10px;
+      font-size: 13px;
+      color: #cbd5e1;
+      display: grid;
+      gap: 4px;
+    }
+
+    .selected-design strong {
+      color: #f8fafc;
+    }
+
+    .quote-total {
+      margin-top: 4px;
+      font-size: 18px;
+      font-weight: 800;
+      color: #fde047;
+    }
+
+    @media (max-width: 1100px) {
+      .grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .controls { justify-content:flex-start; width:100%; }
+      .input, .select { flex:1 1 240px; min-width:200px; }
+      .quote-grid { grid-template-columns:1fr; }
+      .quote-steps { grid-template-columns:1fr; }
+      .process-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 980px) {
+      .modal-card { grid-template-columns:1fr; }
+      .modal-side { border-left:none; border-top:1px solid var(--line); max-height:45vh; }
+    }
+
+    @media (max-width: 760px) {
+      .topbar-inner, .wrap { padding-left:14px; padding-right:14px; }
+      .top-row { flex-direction:column; align-items:flex-start; }
+      .grid { grid-template-columns:1fr; }
+      .hero { padding:14px; }
+      .palette-bg-light { flex-wrap: nowrap; overflow-x:auto; }
+      .process-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="top-row">
+        <div class="brand" aria-label="CK Event Gallery">
+          <div class="brand-badge">CK</div>
+          <div>
+            <h1>CK Event Gallery</h1>
+            <p>Premium Canopy Visualizer &amp; Design Preview</p>
+          </div>
+        </div>
+        <div class="controls">
+          <input id="searchInput" class="input" type="search" placeholder="Search themes (e.g., gold, navy, pink)" />
+          <select id="sortSelect" class="select" aria-label="Sort design list">
+            <option value="popular">Sort: Popular First</option>
+            <option value="newest">Sort: Newest Added</option>
+            <option value="name">Sort: A–Z Name</option>
+          </select>
+        </div>
+      </div>
+      <div class="palette-bg-light" id="paletteContainer"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-label="Gallery introduction">
+      <div>
+        <h2>Welcome! Let’s book your canopy in 4 simple steps</h2>
+        <p>Choose a design first, fill quantities, check your live total, then send one complete WhatsApp order.</p>
+      </div>
+      <button class="btn btn-primary" onclick="openModal('customColorModal')">Request Custom Theme</button>
+    </section>
+
+    <section class="process-banner" aria-label="How booking works">
+      <h3 class="process-title">What to do right now</h3>
+      <div class="process-grid">
+        <div class="process-item"><strong>Step 1: Choose Design</strong>Click <em>Select This Design</em> from any gallery card, or use Custom Theme if you want a new look.</div>
+        <div class="process-item"><strong>Step 2: Enter Canopy Qty</strong>Tell us how many 20x20 Arabian canopies you need (RM 400 each package).</div>
+        <div class="process-item"><strong>Step 3: Enter Table + Chairs Sets</strong>Add how many sets you need (RM 50 per set = 1 table + 10 chairs).</div>
+        <div class="process-item"><strong>Step 4: Send WhatsApp</strong>Tap the WhatsApp button to send all details at once: design, colors, quantity, subtotal, discount, and total.</div>
+      </div>
+    </section>
+
+    <section class="section" style="margin-top:16px;">
+      <div class="section-head">
+        <h2 class="section-title">Popular Designs</h2>
+      </div>
+      <div id="popularGrid" class="grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">All Designs</h2>
+          <div id="resultCount" class="muted">Connecting to gallery source...</div>
+        </div>
+      </div>
+      <div id="galleryGrid" class="grid"></div>
+      <div class="load-wrap">
+        <button id="loadMoreBtn" class="btn" style="display:none; padding:12px 22px;">Load More Designs</button>
+      </div>
+    </section>
+
+
+    <section class="quote-card" aria-label="Package quotation builder">
+      <div class="section-head" style="margin-bottom:0;">
+        <div>
+          <h2 class="section-title">Canopy Package Quotation</h2>
+          <div class="muted">Super user-friendly form: select design, enter quantities, and send one complete WhatsApp request.</div>
+        </div>
+      </div>
+
+      <div class="quote-note">
+        <strong>Plain Package (RM 400 each):</strong> 20x20 Arabian canopy, 2-color scallops, 1 ceiling fan, 2 tube lights.<br />
+        <strong>Add-on Set (RM 50 each):</strong> 1 table + 10 chairs (table base cream + top layer theme color, chair cover cream + ribbon theme color).<br />
+        <strong>Special Discount:</strong> 10% off total for orders of 4 or more units (canopy quantity + add-on sets).
+      </div>
+
+      <div class="quote-steps" aria-label="Booking steps">
+        <div class="step-card"><strong>Step 1: Choose design</strong>Select from gallery first, or choose custom design if you do not find your preferred style.</div>
+        <div class="step-card"><strong>Step 2: Enter quantity</strong>Enter quantities clearly: canopy count and table+chairs set count.</div>
+        <div class="step-card"><strong>Step 3: Send full details</strong>Send everything in one WhatsApp message: design, package details, quantities, discount, and final total.</div>
+      </div>
+
+      <div id="selectedDesignBox" class="selected-design">
+        <div><strong>Selected design:</strong> Not selected yet</div>
+        <div><strong>Type:</strong> Gallery design</div>
+      </div>
+
+      <div class="quote-grid">
+        <input id="qName" class="input" placeholder="Customer name" />
+        <input id="qPhone" class="input" placeholder="Customer phone" />
+        <input id="qDate" type="date" class="input" />
+        <input id="qLocation" class="input" placeholder="Event location" />
+        <input id="qTheme1" class="input" placeholder="Main theme color (e.g. Royal Blue)" />
+        <input id="qTheme2" class="input" placeholder="Second scallop color (optional)" />
+        <input id="qCanopyQty" type="number" min="1" value="1" class="input" placeholder="How many canopies?" />
+        <input id="qAddonQty" type="number" min="0" value="0" class="input" placeholder="How many table+chair sets?" />
+      </div>
+
+      <div id="quoteSummary" class="quote-summary" aria-live="polite"></div>
+
+      <div class="card-actions" style="margin-top:2px;">
+        <button class="btn" id="calcQuoteBtn">Update Total</button>
+        <button class="btn btn-wa" id="sendQuoteBtn">Send Complete Order via WhatsApp</button>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-media">
+        <button class="close-btn" onclick="closeModal('modal')" aria-label="Close preview">✕</button>
+        <button class="nav-btn prev" id="prevBtn" aria-label="Previous design">‹</button>
+        <img id="modalImg" alt="Canopy design enlarged preview" />
+        <button class="nav-btn next" id="nextBtn" aria-label="Next design">›</button>
+      </div>
+      <aside class="modal-side">
+        <div>
+          <div class="muted" style="margin-bottom:6px;">Theme Design</div>
+          <h3 id="modalTitle" class="modal-title"></h3>
+        </div>
+        <div>
+          <div class="muted" style="margin-bottom:8px;">Theme Colors</div>
+          <div id="modalTags" class="tags"></div>
+        </div>
+        <div style="margin-top:auto; display:flex; flex-direction:column; gap:10px;">
+          <a id="modalWaBtn" class="btn btn-wa" href="#" target="_blank" rel="noopener">WhatsApp: I want this design</a>
+          <div class="card-actions" style="margin-top:0;">
+            <a id="modalOpenLink" class="btn" target="_blank" rel="noopener">Open Image</a>
+            <a id="modalDownloadLink" class="btn" download>Download WebP</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div id="customColorModal" class="modal" aria-hidden="true">
+    <div class="mini-modal">
+      <button class="close-btn" onclick="closeModal('customColorModal')" aria-label="Close custom color request">✕</button>
+      <h3 style="margin:0; font-size:22px;">Unlimited Custom Colors</h3>
+      <p class="muted" style="margin:0; line-height:1.5;">Choose one or two colors and we will prepare a tailored canopy concept for your event.</p>
+
+      <div class="form-group">
+        <label for="customColor1">1. Main Theme Color</label>
+        <div class="color-picker-row">
+          <input type="color" id="picker1" class="color-picker" value="#2980b9" onchange="syncColorName('picker1', 'customColor1')">
+          <input id="customColor1" type="text" class="input" placeholder="e.g., Royal Blue" />
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-top:8px;">
+        <label for="customColor2">2. Secondary Color (Optional)</label>
+        <div class="color-picker-row">
+          <input type="color" id="picker2" class="color-picker" value="#ffb8e6" onchange="syncColorName('picker2', 'customColor2')">
+          <input id="customColor2" type="text" class="input" placeholder="e.g., Light Pink" />
+        </div>
+      </div>
+
+      <div class="card-actions" style="margin-top:2px;">
+        <button onclick="selectCustomDesign()" class="btn">Use Custom Design For Quote</button>
+        <button onclick="sendCustomPrompt()" class="btn btn-wa">Request Mockup via WhatsApp</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const CK_WHATSAPP_NUMBER = "60126597702";
+    const CONFIG = {
+      endpointUrl: "https://script.google.com/macros/s/AKfycbyrQQbrFGB81S0o2FiZlP59I_rP74dc-IUk1sHGHcdOLoyfL3ABeddt_mPdXECBxOIE/exec",
+      pageSize: 9,
+      popularCount: 3
+    };
+
+    const COLOR_MAP = {
+      red: "#e74c3c", gold: "#f1c40f", yellow: "#f1c40f",
+      purple: "#9b59b6", pink: "#ff9ff3", "light pink": "#ffb8e6",
+      blue: "#3498db", "royal blue": "#2980b9", navy: "#192a56", "navy blue": "#192a56", "army blue": "#4b6584", "light blue": "#87ceeb",
+      black: "#2c3e50", white: "#ffffff", cream: "#fffdd0", light: "#f8f9fa",
+      maroon: "#800000", silver: "#bdc3c7", "silver-grey": "#95a5a6", grey: "#95a5a6",
+      green: "#2ecc71", apple: "#badc58", "apple green": "#badc58", lime: "#84cc16", emerald: "#27ae60", "emerald green": "#27ae60",
+      peach: "#fab1a0", teal: "#008080", orange: "#e67e22", magenta: "#ff00ff",
+      "sky blue": "#38bdf8", turquoise: "#14b8a6", mustard: "#d4a017"
+    };
+
+    function normalizeColorName(colorName) {
+      return (colorName || "")
+        .toLowerCase()
+        .replace(/[_/]+/g, " ")
+        .replace(/[^a-z0-9\s-]+/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function getHex(colorName) {
+      if (!colorName || colorName === "unknown") return "transparent";
+      const clean = normalizeColorName(colorName);
+      if (!clean) return "transparent";
+      if (COLOR_MAP[clean]) return COLOR_MAP[clean];
+
+      const mapKeys = Object.keys(COLOR_MAP).sort((a, b) => b.length - a.length);
+      const padded = ` ${clean} `;
+      for (const key of mapKeys) {
+        const keyNorm = normalizeColorName(key);
+        if (padded.includes(` ${keyNorm} `)) return COLOR_MAP[key];
+      }
+
+      let hash = 0;
+      for (let i = 0; i < clean.length; i++) hash = clean.charCodeAt(i) + ((hash << 5) - hash);
+      let color = "#";
+      for (let i = 0; i < 3; i++) {
+        let value = (hash >> (i * 8)) & 0xff;
+        value = Math.max(value, 80);
+        color += (`00${value.toString(16)}`).slice(-2);
+      }
+      return color;
+    }
+
+    function hexToRgb(hex) {
+      let c = hex.substring(1);
+      if (c.length === 3) c = c.split("").map(x => x + x).join("");
+      return [parseInt(c.substring(0,2),16), parseInt(c.substring(2,4),16), parseInt(c.substring(4,6),16)];
+    }
+
+    function syncColorName(pickerId, inputId) {
+      const hex = document.getElementById(pickerId).value;
+      let minDistance = Infinity;
+      let closestName = "Custom Color";
+      const [r1, g1, b1] = hexToRgb(hex);
+
+      for (const [name, mapHex] of Object.entries(COLOR_MAP)) {
+        const [r2, g2, b2] = hexToRgb(mapHex);
+        const dist = Math.sqrt((r2-r1) ** 2 + (g2-g1) ** 2 + (b2-b1) ** 2);
+        if (dist < minDistance) {
+          minDistance = dist;
+          closestName = name.replace(/\b\w/g, l => l.toUpperCase());
+        }
+      }
+      document.getElementById(inputId).value = closestName;
+    }
+
+    let allItems = [];
+    let filteredItems = [];
+    let visibleCount = CONFIG.pageSize;
+    let currentModalIndex = -1;
+    let selectedSwatchColor = "";
+    let selectedQuoteDesign = null;
+
+    function toRenderableImageUrl(url) {
+      if (!url) return "";
+      if (url.includes("uc?export=view&id=")) {
+        return url.replace("uc?export=view&id=", "thumbnail?id=") + "&sz=w1600";
+      }
+      return url;
+    }
+
+    async function fetchItems() {
+      try {
+        const res = await fetch(CONFIG.endpointUrl);
+        if (!res.ok) throw new Error("Network Error");
+        const data = await res.json();
+        const items = Array.isArray(data) ? data : (data.items || []);
+
+        return items.map(item => ({
+          ...item,
+          originalImageUrl: item.imageUrl,
+          imageUrl: toRenderableImageUrl(item.imageUrl),
+          popularScore: item.popular ? (100 - item.popularityOrder) : 0,
+          createdAt: item.createdAt || new Date().toISOString()
+        }));
+      } catch (err) {
+        console.error("Fetch Error:", err);
+        document.getElementById("resultCount").textContent = "Unable to connect to gallery source.";
+        return [];
+      }
+    }
+
+    function renderColorPalette() {
+      const colorSet = new Set();
+      allItems.forEach(item => {
+        if (item.mainColor && item.mainColor !== "unknown") colorSet.add(normalizeColorName(item.mainColor));
+        if (item.secondaryColor && item.secondaryColor !== "unknown") colorSet.add(normalizeColorName(item.secondaryColor));
+      });
+
+      const paletteContainer = document.getElementById("paletteContainer");
+      paletteContainer.innerHTML = '<div class="muted">Filter:</div>';
+
+      const resetBtn = document.createElement("button");
+      resetBtn.className = "custom-swatch-btn";
+      resetBtn.innerText = "All Colors";
+      resetBtn.onclick = () => filterBySwatch("");
+      paletteContainer.appendChild(resetBtn);
+
+      Array.from(colorSet).sort().forEach(color => {
+        const label = color.replace(/\b\w/g, l => l.toUpperCase());
+        const swatchBtn = document.createElement("button");
+        swatchBtn.type = "button";
+        swatchBtn.className = "swatch-chip";
+        swatchBtn.title = `Filter by ${label}`;
+        swatchBtn.dataset.color = color;
+        swatchBtn.onclick = () => filterBySwatch(color);
+        swatchBtn.innerHTML = `
+          <span class="swatch" style="background-color:${getHex(color)}"></span>
+          <span class="swatch-name">${label}</span>
+        `;
+        paletteContainer.appendChild(swatchBtn);
+      });
+
+      const customBtn = document.createElement("button");
+      customBtn.className = "custom-swatch-btn";
+      customBtn.innerHTML = "🎨 Custom Color";
+      customBtn.onclick = () => openModal("customColorModal");
+      paletteContainer.appendChild(customBtn);
+    }
+
+    function filterBySwatch(color) {
+      selectedSwatchColor = color;
+      document.querySelectorAll("#paletteContainer .swatch-chip").forEach(s => {
+        s.classList.toggle("active", s.dataset.color === color);
+      });
+      applyFiltersAndSort();
+    }
+
+    function matchesSearch(item, query) {
+      const text = [
+        item.title,
+        item.filename,
+        ...(item.tags || []),
+        item.mainColor,
+        item.secondaryColor
+      ].filter(Boolean).join(" ").toLowerCase();
+
+      const passSearch = !query || text.includes(query.toLowerCase());
+      const passSwatch = !selectedSwatchColor || text.includes(selectedSwatchColor);
+      return passSearch && passSwatch;
+    }
+
+    function bySort(items, sortType) {
+      const arr = [...items];
+      if (sortType === "name") return arr.sort((a,b) => (a.title || a.filename).localeCompare(b.title || b.filename));
+      if (sortType === "newest") return arr.sort((a,b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
+      return arr.sort((a,b) => (b.popularScore || 0) - (a.popularScore || 0));
+    }
+
+    function applyFiltersAndSort() {
+      const q = document.getElementById("searchInput").value.trim();
+      const sort = document.getElementById("sortSelect").value;
+      filteredItems = bySort(allItems.filter(item => matchesSearch(item, q)), sort);
+      renderPopular();
+      renderGallery(true);
+    }
+
+    function slugifyText(value) {
+      return (value || "not-specified")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "") || "not-specified";
+    }
+
+    function setSelectedDesign(design) {
+      selectedQuoteDesign = design;
+      const box = document.getElementById("selectedDesignBox");
+      box.innerHTML = `
+        <div><strong>Selected design:</strong> ${design.title}</div>
+        <div><strong>Type:</strong> ${design.type}</div>
+      `;
+      renderQuoteSummary();
+    }
+
+    function selectDesignByIndex(index) {
+      const item = filteredItems[index];
+      if (!item) return;
+      setSelectedDesign({
+        type: "Gallery design",
+        title: item.title || item.filename || "Canopy Theme",
+        imageUrl: item.originalImageUrl || item.imageUrl,
+        prompt: ""
+      });
+      document.getElementById("qTheme1").value = document.getElementById("qTheme1").value || (item.mainColor || "");
+      document.getElementById("qTheme2").value = document.getElementById("qTheme2").value || (item.secondaryColor || "");
+      renderQuoteSummary();
+    }
+
+    function selectCustomDesign() {
+      const color1Raw = document.getElementById("customColor1").value.trim() || "light blue";
+      const color2Raw = document.getElementById("customColor2").value.trim() || "purple";
+      const prompt = buildCustomPromptText(color1Raw, color2Raw);
+      const filename = buildSearchableFilename(color1Raw, color2Raw);
+      setSelectedDesign({
+        type: "Custom prompt",
+        title: `Custom: ${color1Raw} + ${color2Raw}`,
+        imageUrl: "Will be generated from custom request",
+        prompt,
+        filename
+      });
+      document.getElementById("qTheme1").value = document.getElementById("qTheme1").value || color1Raw;
+      document.getElementById("qTheme2").value = document.getElementById("qTheme2").value || color2Raw;
+      closeModal("customColorModal");
+      renderQuoteSummary();
+    }
+
+    function makeCard(item, absoluteIndex, opts = {}) {
+      const popularLabel = opts.showPopularBadge ? '<div class="badge-pop">★ Popular</div>' : "";
+      const waMessage = `Hi CK Event Management, I like this canopy design:\n\nTheme: ${item.title || item.filename || "Canopy Theme"}\nOriginal Link: ${item.originalImageUrl || item.imageUrl}`;
+      const waHref = `https://wa.me/${CK_WHATSAPP_NUMBER}?text=${encodeURIComponent(waMessage)}`;
+
+      const hex1 = getHex(item.mainColor);
+      const hex2 = getHex(item.secondaryColor);
+      let themeLabel = '<div class="badge-theme">';
+      if (hex1 !== "transparent") themeLabel += `<span class="color-dot" style="background:${hex1}"></span>`;
+      if (hex2 !== "transparent") themeLabel += `<span class="color-dot" style="background:${hex2}"></span>`;
+      themeLabel += "</div>";
+
+      const card = document.createElement("article");
+      card.className = "card";
+      card.innerHTML = `
+        <div class="thumb-wrap" onclick="openModalByIndex(${absoluteIndex})">
+          ${popularLabel}${themeLabel}
+          <img class="thumb" src="${item.imageUrl}" loading="lazy" alt="${item.title || item.filename || "Canopy design"}" onerror="this.src='https://placehold.co/1200x800/1e293b/94a3b8?text=Image+Load+Error';" />
+        </div>
+        <div class="card-body">
+          <h3 class="title">${item.title || item.filename}</h3>
+          <div class="card-actions">
+            <button class="btn" onclick="openModalByIndex(${absoluteIndex})">Preview</button>
+            <button class="btn" onclick="selectDesignByIndex(${absoluteIndex})">Select This Design</button>
+            <a class="btn" href="${item.originalImageUrl || item.imageUrl}" target="_blank" rel="noopener">Open</a>
+            <a class="btn btn-primary" href="${item.originalImageUrl || item.imageUrl}" download="${item.filename || "canopy.webp"}">Download</a>
+          </div>
+          <div class="card-actions" style="margin-top:0;">
+            <a class="btn btn-wa" href="${waHref}" target="_blank" rel="noopener">WhatsApp: I like this</a>
+          </div>
+        </div>
+      `;
+      return card;
+    }
+
+    function renderPopular() {
+      const grid = document.getElementById("popularGrid");
+      grid.innerHTML = "";
+      const popularSorted = bySort(filteredItems, "popular").slice(0, CONFIG.popularCount);
+      if (!popularSorted.length) {
+        grid.innerHTML = '<div class="empty">No popular designs match your current filter.</div>';
+        return;
+      }
+
+      popularSorted.forEach(item => {
+        grid.appendChild(makeCard(item, filteredItems.findIndex(x => x.id === item.id), { showPopularBadge: true }));
+      });
+    }
+
+    function renderGallery(resetVisible = false) {
+      const grid = document.getElementById("galleryGrid");
+      if (resetVisible) visibleCount = CONFIG.pageSize;
+      grid.innerHTML = "";
+      const itemsToShow = filteredItems.slice(0, visibleCount);
+
+      if (!itemsToShow.length) {
+        grid.innerHTML = '<div class="empty">No designs match your search.</div>';
+      } else {
+        itemsToShow.forEach((item, idx) => grid.appendChild(makeCard(item, idx)));
+      }
+
+      document.getElementById("resultCount").textContent = `${filteredItems.length} design(s) found`;
+      document.getElementById("loadMoreBtn").style.display = visibleCount >= filteredItems.length ? "none" : "inline-flex";
+    }
+
+    function openModalByIndex(index) {
+      if (index < 0 || index >= filteredItems.length) return;
+      currentModalIndex = index;
+      const item = filteredItems[index];
+
+      document.getElementById("modalImg").src = item.imageUrl;
+      document.getElementById("modalTitle").textContent = item.title || "Canopy Theme";
+      document.getElementById("modalOpenLink").href = item.originalImageUrl || item.imageUrl;
+
+      let dlName = item.filename || "canopy-preview";
+      if (!dlName.endsWith(".webp")) dlName += ".webp";
+      document.getElementById("modalDownloadLink").href = item.originalImageUrl || item.imageUrl;
+      document.getElementById("modalDownloadLink").setAttribute("download", dlName);
+
+      const waText = `Hi CK Event Management, I am interested in this canopy design:\n\nTheme: ${item.title || item.filename || "Canopy Theme"}\nOriginal Link: ${item.originalImageUrl || item.imageUrl}`;
+      document.getElementById("modalWaBtn").href = `https://wa.me/${CK_WHATSAPP_NUMBER}?text=${encodeURIComponent(waText)}`;
+
+      const tagsEl = document.getElementById("modalTags");
+      tagsEl.innerHTML = (item.tags || []).map(t => `<span class="tag">${t}</span>`).join("");
+
+      openModal("modal");
+    }
+
+    function buildCustomPromptText(color1Raw, color2Raw) {
+      return `Use the attached reference image as the base composition and layout. Recreate the same outdoor daytime event canopy setup with the same camera angle, same canopy shape, same drape arrangement, same chair/table placement, same background environment, and same photorealistic style. Change ONLY the fabric colors: - Canopy roof: silver-grey - Chair covers: white - Scalloped drapes: alternating ${color1Raw} and ${color2Raw} - Chair ribbons/bows: ${color2Raw} - Keep the overall setup identical in structure and styling to the reference image. High-quality realistic photography, natural daylight, sharp details, clean folds in fabric, event rental catalog style, professional image, no extra objects, no people, no text, no watermark. Output: high-resolution WEBP`;
+    }
+
+    function buildSearchableFilename(color1Raw, color2Raw) {
+      return `searchable-canopy-preview-${slugifyText(color1Raw)}-${slugifyText(color2Raw)}-silver-grey-canopy-white-chair-covers-white-table-base-cloths-${slugifyText(color1Raw)}-sashes-daytime-outdoor-event.webp`;
+    }
+
+    function sendCustomPrompt() {
+      const color1Raw = document.getElementById("customColor1").value.trim() || "light blue";
+      const color2Raw = document.getElementById("customColor2").value.trim() || "purple";
+      const promptText = buildCustomPromptText(color1Raw, color2Raw);
+      const searchableName = buildSearchableFilename(color1Raw, color2Raw);
+
+      let msg = `Hi CK Event Management, I want a custom canopy design mockup.
+
+`;
+      msg += `Main color: ${color1Raw}
+Secondary color: ${color2Raw}
+
+`;
+      msg += `---
+*[CUSTOM AI PROMPT]*
+${promptText}
+
+`;
+      msg += `*Searchable filename:* ${searchableName}`;
+
+      window.open(`https://wa.me/${CK_WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
+      setSelectedDesign({
+        type: "Custom prompt",
+        title: `Custom: ${color1Raw} + ${color2Raw}`,
+        imageUrl: "Will be generated from custom request",
+        prompt: promptText,
+        filename: searchableName
+      });
+      closeModal("customColorModal");
+    }
+
+    function openModal(id) {
+      const m = document.getElementById(id);
+      m.classList.add("open");
+      m.setAttribute("aria-hidden", "false");
+    }
+
+    function closeModal(id) {
+      const m = document.getElementById(id);
+      m.classList.remove("open");
+      m.setAttribute("aria-hidden", "true");
+    }
+
+    function modalPrev() { openModalByIndex((currentModalIndex - 1 + filteredItems.length) % filteredItems.length); }
+    function modalNext() { openModalByIndex((currentModalIndex + 1) % filteredItems.length); }
+
+
+
+    function formatRM(value) {
+      return `RM ${value.toFixed(2)}`;
+    }
+
+    function buildQuoteData() {
+      const canopyUnit = 400;
+      const addonUnit = 50;
+      const name = document.getElementById("qName").value.trim() || "Not provided";
+      const phone = document.getElementById("qPhone").value.trim() || "Not provided";
+      const eventDate = document.getElementById("qDate").value || "Not provided";
+      const location = document.getElementById("qLocation").value.trim() || "Not provided";
+      const theme1 = document.getElementById("qTheme1").value.trim() || "Not selected";
+      const theme2 = document.getElementById("qTheme2").value.trim() || "Not selected";
+      const canopyQty = Math.max(1, parseInt(document.getElementById("qCanopyQty").value || "1", 10));
+      const addonQty = Math.max(0, parseInt(document.getElementById("qAddonQty").value || "0", 10));
+
+      const canopySubtotal = canopyQty * canopyUnit;
+      const addonSubtotal = addonQty * addonUnit;
+      const gross = canopySubtotal + addonSubtotal;
+      const totalUnits = canopyQty + addonQty;
+      const discount = totalUnits >= 4 ? gross * 0.10 : 0;
+      const net = gross - discount;
+
+      return {
+        name, phone, eventDate, location, theme1, theme2,
+        canopyQty, addonQty, canopySubtotal, addonSubtotal,
+        gross, discount, net, totalUnits,
+        selectedDesign: selectedQuoteDesign || { type: "Not selected", title: "Not selected yet", imageUrl: "Not selected", prompt: "", filename: "" }
+      };
+    }
+
+    function renderQuoteSummary() {
+      const q = buildQuoteData();
+      const discountLine = q.discount > 0
+        ? `<div>Special discount (10%): <strong>- ${formatRM(q.discount)}</strong></div>`
+        : `<div>Special discount: <strong>Not yet eligible</strong> (add up to 4+ total units)</div>`;
+
+      document.getElementById("quoteSummary").innerHTML = `
+        <div>Canopy package: <strong>${q.canopyQty}</strong> × RM 400.00 = <strong>${formatRM(q.canopySubtotal)}</strong></div>
+        <div>Add-on set (1 table + 10 chairs): <strong>${q.addonQty}</strong> × RM 50.00 = <strong>${formatRM(q.addonSubtotal)}</strong></div>
+        <div>Subtotal: <strong>${formatRM(q.gross)}</strong></div>
+        ${discountLine}
+        <div class="quote-total">Final total: ${formatRM(q.net)}</div>
+      `;
+    }
+
+    function sendQuotationWhatsapp() {
+      const q = buildQuoteData();
+      const discountText = q.discount > 0
+        ? `Special Discount (10%): -${formatRM(q.discount)}`
+        : `Special Discount: Not eligible yet (requires 4+ total units)`;
+
+      const msg = [
+        `Hi CK Event Management, I want to confirm this canopy booking:`,
+        ``,
+        `Customer Name: ${q.name}`,
+        `Phone: ${q.phone}`,
+        `Event Date: ${q.eventDate}`,
+        `Location: ${q.location}`,
+        ``,
+        `Selected Design:`,
+        `- Type: ${q.selectedDesign.type}`,
+        `- Title: ${q.selectedDesign.title}`,
+        `- Reference: ${q.selectedDesign.imageUrl}`,
+        ...(q.selectedDesign.prompt ? [`- Custom Prompt: ${q.selectedDesign.prompt}`] : []),
+        ...(q.selectedDesign.filename ? [`- Searchable Filename: ${q.selectedDesign.filename}`] : []),
+        ``,
+        `Selected Colors:`,
+        `- Main Theme: ${q.theme1}`,
+        `- Secondary Scallop: ${q.theme2}`,
+        ``,
+        `Package Details:`,
+        `- Plain Canopy Package (RM400 each): 20x20 Arabian canopy + 2-color scallops + 1 ceiling fan + 2 tube lights`,
+        `- Quantity: ${q.canopyQty}`,
+        `- Canopy Subtotal: ${formatRM(q.canopySubtotal)}`,
+        ``,
+        `Add-on Details:`,
+        `- Add-on Set (RM50 each): 1 table + 10 chairs`,
+        `- Styling: table base cream, table top theme color, chair cover cream, ribbon theme color`,
+        `- Quantity: ${q.addonQty}`,
+        `- Add-on Subtotal: ${formatRM(q.addonSubtotal)}`,
+        ``,
+        `Subtotal: ${formatRM(q.gross)}`,
+        `${discountText}`,
+        `FINAL TOTAL: ${formatRM(q.net)}`,
+        ``,
+        `Please proceed with this quotation. Thank you.`
+      ].join("\n");
+
+      window.open(`https://wa.me/${CK_WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
+    }
+
+
+    async function init() {
+      allItems = await fetchItems();
+      renderColorPalette();
+      applyFiltersAndSort();
+
+      document.getElementById("searchInput").addEventListener("input", applyFiltersAndSort);
+      document.getElementById("sortSelect").addEventListener("change", applyFiltersAndSort);
+      document.getElementById("loadMoreBtn").addEventListener("click", () => {
+        visibleCount += CONFIG.pageSize;
+        renderGallery(false);
+      });
+      document.getElementById("prevBtn").addEventListener("click", modalPrev);
+      document.getElementById("nextBtn").addEventListener("click", modalNext);
+      document.getElementById("calcQuoteBtn").addEventListener("click", renderQuoteSummary);
+      document.getElementById("sendQuoteBtn").addEventListener("click", sendQuotationWhatsapp);
+      ["qName","qPhone","qDate","qLocation","qTheme1","qTheme2","qCanopyQty","qAddonQty"].forEach(id => {
+        document.getElementById(id).addEventListener("input", renderQuoteSummary);
+      });
+      setSelectedDesign({ type: "Not selected", title: "Not selected yet", imageUrl: "Not selected", prompt: "", filename: "" });
+
+      document.querySelectorAll(".modal").forEach(m => {
+        m.addEventListener("click", e => {
+          if (e.target === m) closeModal(m.id);
+        });
+      });
+
+      window.addEventListener("keydown", e => {
+        if (!document.getElementById("modal").classList.contains("open")) return;
+        if (e.key === "Escape") closeModal("modal");
+        if (e.key === "ArrowLeft") modalPrev();
+        if (e.key === "ArrowRight") modalNext();
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>
